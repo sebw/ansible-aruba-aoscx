@@ -17,5 +17,5 @@
       description: UPLINK_VLAN
       ipv4: ['10.20.20.1/24']
       ipv6: ['3000:db8::1234/64']
-      vrf: red
+      vrf: mgmt
       ip_helper_address: ['10.40.20.1']
