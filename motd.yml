@@ -1,6 +1,10 @@
 ---
 - name: configure banner
   hosts: all
+ 
+  collections:
+   - arubanetworks.aoscx
+
   tasks:
 
   - name: Configure a multi-line banner
