@@ -1,0 +1,13 @@
+---
+- name: configure banner
+  hosts: all
+  tasks:
+
+  - name: Configure a multi-line banner
+    aoscx_config:
+      lines:
+        - hello this is a banner_motd
+        - this is banner line 2 banner_motd
+        - this is banner line 3 banner_motd
+      before: "banner motd `"
+      after: "`"
